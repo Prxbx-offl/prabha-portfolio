@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>LLM resume ranker: resumes scored against a job description</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6F4EE"/><stop offset="1" stop-color="#ECE8DD"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <!-- job description -->
+  <g filter="url(#sh)">
+    <rect x="36" y="44" width="150" height="232" rx="14" fill="#fff"/>
+  </g>
+  <rect x="52" y="60" width="64" height="20" rx="10" fill="#1A1A1A"/>
+  <text x="84" y="74" text-anchor="middle" font-size="10" font-weight="700" fill="#C8A86A">JOB DESC</text>
+  <g fill="#E3DFD4">
+    <rect x="52" y="96" width="116" height="7" rx="3.5"/>
+    <rect x="52" y="111" width="96" height="7" rx="3.5"/>
+    <rect x="52" y="126" width="108" height="7" rx="3.5"/>
+  </g>
+  <g fill="#C8A86A">
+    <rect x="52" y="150" width="44" height="16" rx="8" opacity="0.25"/>
+    <rect x="102" y="150" width="56" height="16" rx="8" opacity="0.25"/>
+    <rect x="52" y="172" width="62" height="16" rx="8" opacity="0.25"/>
+    <rect x="120" y="172" width="38" height="16" rx="8" opacity="0.25"/>
+  </g>
+  <g font-size="8.5" font-weight="600" fill="#8C6F35" text-anchor="middle">
+    <text x="74" y="161">Python</text><text x="130" y="161">NLP</text>
+    <text x="83" y="183">SQL</text><text x="139" y="183">ML</text>
+  </g>
+  <g fill="#E3DFD4">
+    <rect x="52" y="206" width="110" height="7" rx="3.5"/>
+    <rect x="52" y="221" width="84" height="7" rx="3.5"/>
+    <rect x="52" y="236" width="100" height="7" rx="3.5"/>
+  </g>
+
+  <!-- embedding / similarity -->
+  <g fill="#C8A86A">
+    <circle cx="222" cy="120" r="4"/><circle cx="240" cy="106" r="3" opacity="0.6"/>
+    <circle cx="252" cy="134" r="5"/><circle cx="236" cy="150" r="3" opacity="0.6"/>
+    <circle cx="266" cy="162" r="4" opacity="0.8"/><circle cx="220" cy="182" r="3" opacity="0.5"/>
+    <circle cx="258" cy="196" r="3.5" opacity="0.7"/><circle cx="276" cy="122" r="3" opacity="0.5"/>
+  </g>
+  <g stroke="#1A1A1A" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.75">
+    <path d="M196 160 H 300"/><path d="M292 152 L 300 160 L 292 168"/>
+  </g>
+
+  <!-- ranked resumes -->
+  <g filter="url(#sh)">
+    <rect x="320" y="40" width="284" height="68" rx="14" fill="#fff" stroke="#C8A86A" stroke-width="1.6"/>
+    <rect x="320" y="126" width="284" height="68" rx="14" fill="#fff"/>
+    <rect x="320" y="212" width="284" height="68" rx="14" fill="#fff"/>
+  </g>
+  <!-- rank badges -->
+  <circle cx="348" cy="74" r="15" fill="#C8A86A"/>
+  <text x="348" y="79" text-anchor="middle" font-size="14" font-weight="800" fill="#1A1A1A">1</text>
+  <circle cx="348" cy="160" r="15" fill="#1A1A1A"/>
+  <text x="348" y="165" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">2</text>
+  <circle cx="348" cy="246" r="15" fill="#E3DFD4"/>
+  <text x="348" y="251" text-anchor="middle" font-size="14" font-weight="800" fill="#666">3</text>
+  <!-- avatars + lines -->
+  <g fill="#D9D4C7">
+    <circle cx="386" cy="74" r="13"/><circle cx="386" cy="160" r="13"/><circle cx="386" cy="246" r="13"/>
+  </g>
+  <g fill="#E3DFD4">
+    <rect x="408" y="64" width="86" height="8" rx="4" fill="#BDB6A5"/><rect x="408" y="79" width="62" height="6" rx="3"/>
+    <rect x="408" y="150" width="76" height="8" rx="4" fill="#BDB6A5"/><rect x="408" y="165" width="56" height="6" rx="3"/>
+    <rect x="408" y="236" width="80" height="8" rx="4" fill="#BDB6A5"/><rect x="408" y="251" width="48" height="6" rx="3"/>
+  </g>
+  <!-- scores -->
+  <g font-size="15" font-weight="800" text-anchor="end">
+    <text x="588" y="72" fill="#1A1A1A">92%</text>
+    <text x="588" y="158" fill="#1A1A1A">81%</text>
+    <text x="588" y="244" fill="#888">67%</text>
+  </g>
+  <g>
+    <rect x="516" y="82" width="72" height="5" rx="2.5" fill="#EEEAE0"/><rect x="516" y="82" width="66" height="5" rx="2.5" fill="#C8A86A"/>
+    <rect x="516" y="168" width="72" height="5" rx="2.5" fill="#EEEAE0"/><rect x="516" y="168" width="58" height="5" rx="2.5" fill="#1A1A1A"/>
+    <rect x="516" y="254" width="72" height="5" rx="2.5" fill="#EEEAE0"/><rect x="516" y="254" width="48" height="5" rx="2.5" fill="#AAA"/>
+  </g>
+</svg>

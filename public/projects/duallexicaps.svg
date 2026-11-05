@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>DualLexiCaps: hate speech detection with capsule networks and summarization</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1D1B18"/><stop offset="1" stop-color="#2B2620"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.7">
+      <stop offset="0" stop-color="#C8A86A" stop-opacity="0.28"/><stop offset="1" stop-color="#C8A86A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <rect width="640" height="320" fill="url(#glow)"/>
+
+  <!-- connections: bubbles -> capsule layer 1 -->
+  <g stroke="#5A544A" stroke-width="1.2" fill="none" opacity="0.8">
+    <path d="M250 85 C 290 85, 290 83, 325 83"/>
+    <path d="M250 85 C 290 85, 290 128, 325 128"/>
+    <path d="M270 162 C 300 162, 300 128, 325 128"/>
+    <path d="M270 162 C 300 162, 300 173, 325 173"/>
+    <path d="M270 162 C 300 162, 300 218, 325 218"/>
+    <path d="M230 236 C 290 236, 290 218, 325 218"/>
+  </g>
+  <!-- capsule layer 1 -> layer 2 -->
+  <g stroke="#C8A86A" stroke-width="1.2" fill="none" opacity="0.55">
+    <path d="M395 83 L 420 118"/><path d="M395 128 L 420 118"/><path d="M395 173 L 420 118"/>
+    <path d="M395 128 L 420 196"/><path d="M395 173 L 420 196"/><path d="M395 218 L 420 196"/>
+    <path d="M490 118 L 512 150"/><path d="M490 196 L 512 170"/>
+  </g>
+
+  <!-- input text bubbles -->
+  <rect x="40" y="58" width="210" height="54" rx="14" fill="#2F2B25" stroke="#3B362E"/>
+  <rect x="56" y="74" width="42" height="9" rx="4.5" fill="#5D574C"/>
+  <rect x="104" y="74" width="60" height="9" rx="4.5" fill="#5D574C"/>
+  <rect x="170" y="74" width="34" height="9" rx="4.5" fill="#5D574C"/>
+  <rect x="56" y="90" width="80" height="9" rx="4.5" fill="#5D574C"/>
+  <rect x="142" y="90" width="46" height="9" rx="4.5" fill="#5D574C"/>
+
+  <rect x="40" y="130" width="230" height="64" rx="14" fill="#2F2B25" stroke="#E0645A" stroke-width="1.6"/>
+  <rect x="56" y="147" width="38" height="11" rx="5.5" fill="#5D574C"/>
+  <rect x="100" y="146" width="62" height="13" rx="6.5" fill="#E0645A" opacity="0.9"/>
+  <rect x="168" y="147" width="44" height="11" rx="5.5" fill="#5D574C"/>
+  <rect x="56" y="166" width="54" height="13" rx="6.5" fill="#E8A35A" opacity="0.85"/>
+  <rect x="116" y="167" width="72" height="11" rx="5.5" fill="#5D574C"/>
+  <circle cx="266" cy="132" r="13" fill="#E0645A"/>
+  <rect x="264.5" y="124" width="3" height="10" rx="1.5" fill="#fff"/>
+  <circle cx="266" cy="138.5" r="1.8" fill="#fff"/>
+
+  <rect x="40" y="212" width="190" height="50" rx="14" fill="#2F2B25" stroke="#3B362E"/>
+  <rect x="56" y="227" width="54" height="9" rx="4.5" fill="#5D574C"/>
+  <rect x="116" y="227" width="40" height="9" rx="4.5" fill="#5D574C"/>
+  <rect x="56" y="242" width="86" height="9" rx="4.5" fill="#5D574C"/>
+  <circle cx="226" cy="214" r="11" fill="#7BBF8A"/>
+  <path d="M221 214 l3.5 3.5 l6 -7" stroke="#1D1B18" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- capsule layer 1 -->
+  <g fill="#26231F" stroke="#C8A86A" stroke-width="1.5">
+    <rect x="325" y="70" width="70" height="26" rx="13"/>
+    <rect x="325" y="115" width="70" height="26" rx="13"/>
+    <rect x="325" y="160" width="70" height="26" rx="13"/>
+    <rect x="325" y="205" width="70" height="26" rx="13"/>
+  </g>
+  <g fill="#C8A86A" opacity="0.7">
+    <rect x="335" y="80" width="38" height="6" rx="3"/>
+    <rect x="335" y="125" width="50" height="6" rx="3"/>
+    <rect x="335" y="170" width="26" height="6" rx="3"/>
+    <rect x="335" y="215" width="44" height="6" rx="3"/>
+  </g>
+  <!-- capsule layer 2 -->
+  <rect x="420" y="102" width="70" height="32" rx="16" fill="#E0645A"/>
+  <rect x="420" y="180" width="70" height="32" rx="16" fill="#3A352D" stroke="#7BBF8A" stroke-width="1.5"/>
+  <text x="455" y="122.5" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">HATE</text>
+  <text x="455" y="200.5" text-anchor="middle" font-size="11" font-weight="700" fill="#7BBF8A">SAFE</text>
+
+  <!-- summary card -->
+  <rect x="512" y="92" width="100" height="136" rx="12" fill="#F7F6F1"/>
+  <rect x="524" y="105" width="52" height="16" rx="8" fill="#1A1A1A"/>
+  <text x="550" y="116.5" text-anchor="middle" font-size="9" font-weight="700" fill="#C8A86A">SUMMARY</text>
+  <g fill="#CFCBC0">
+    <rect x="524" y="132" width="76" height="6" rx="3"/>
+    <rect x="524" y="145" width="64" height="6" rx="3"/>
+    <rect x="524" y="158" width="72" height="6" rx="3"/>
+    <rect x="524" y="171" width="50" height="6" rx="3"/>
+  </g>
+  <rect x="524" y="190" width="76" height="6" rx="3" fill="#EBE7DD"/>
+  <rect x="524" y="190" width="70" height="6" rx="3" fill="#E0645A"/>
+  <text x="524" y="214" font-size="9.5" font-weight="600" fill="#1A1A1A">94% confidence</text>
+
+  <text x="40" y="296" font-size="12" font-weight="600" fill="#8A8275" letter-spacing="1.5">CAPSULE NETS · EXPLAINABLE AI · LLM SUMMARY</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Smart face access control: face scan kiosk granting access and logging attendance</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF1EA"/><stop offset="1" stop-color="#E2E8DE"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22292A"/><stop offset="1" stop-color="#171B1C"/>
+    </linearGradient>
+    <filter id="sh" x="-15%" y="-10%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+
+  <!-- kiosk -->
+  <g filter="url(#sh)">
+    <rect x="60" y="30" width="180" height="256" rx="22" fill="#1A1A1A"/>
+  </g>
+  <rect x="72" y="44" width="156" height="228" rx="14" fill="url(#screen)"/>
+  <circle cx="150" cy="38" r="3" fill="#444"/>
+  <!-- scan ring + person -->
+  <circle cx="150" cy="128" r="58" fill="none" stroke="#3E4A48" stroke-width="2"/>
+  <circle cx="150" cy="128" r="58" fill="none" stroke="#6CC28A" stroke-width="3.5" stroke-dasharray="250 115" stroke-linecap="round" transform="rotate(-90 150 128)"/>
+  <circle cx="150" cy="114" r="22" fill="#9AA6A3"/>
+  <path d="M114 176 C 114 150, 132 142, 150 142 C 168 142, 186 150, 186 176 Z" fill="#9AA6A3"/>
+  <line x1="98" y1="132" x2="202" y2="132" stroke="#6CC28A" stroke-width="2" opacity="0.8"/>
+  <!-- granted pill -->
+  <rect x="80" y="210" width="140" height="30" rx="15" fill="#6CC28A"/>
+  <path d="M92 225 l4.5 4.5 l8 -9" stroke="#0E2416" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="161" y="229.5" text-anchor="middle" font-size="10.5" font-weight="800" fill="#0E2416">ACCESS GRANTED</text>
+
+  <!-- connector -->
+  <path d="M240 158 C 262 158, 262 160, 282 160" stroke="#1A1A1A" stroke-width="1.6" fill="none" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- attendance card -->
+  <g filter="url(#sh)">
+    <rect x="282" y="50" width="318" height="220" rx="16" fill="#fff"/>
+  </g>
+  <text x="304" y="82" font-size="15" font-weight="800" fill="#1A1A1A">Attendance</text>
+  <rect x="514" y="66" width="68" height="22" rx="11" fill="#F1EEE6"/>
+  <text x="548" y="81" text-anchor="middle" font-size="10" font-weight="700" fill="#8C6F35">TODAY</text>
+  <line x1="304" y1="98" x2="582" y2="98" stroke="#EEEAE0"/>
+
+  <g>
+    <circle cx="318" cy="122" r="11" fill="#D9D4C7"/>
+    <rect x="338" y="116" width="110" height="8" rx="4" fill="#BDB6A5"/>
+    <text x="510" y="126" font-size="11.5" font-weight="600" fill="#666">09:02</text>
+    <circle cx="570" cy="122" r="6" fill="#6CC28A"/>
+
+    <circle cx="318" cy="160" r="11" fill="#D9D4C7"/>
+    <rect x="338" y="154" width="90" height="8" rx="4" fill="#BDB6A5"/>
+    <text x="510" y="164" font-size="11.5" font-weight="600" fill="#666">09:05</text>
+    <circle cx="570" cy="160" r="6" fill="#6CC28A"/>
+
+    <circle cx="318" cy="198" r="11" fill="#D9D4C7"/>
+    <rect x="338" y="192" width="120" height="8" rx="4" fill="#BDB6A5"/>
+    <text x="510" y="202" font-size="11.5" font-weight="600" fill="#666">09:17</text>
+    <circle cx="570" cy="198" r="6" fill="#E8B04A"/>
+
+    <circle cx="318" cy="236" r="11" fill="#D9D4C7"/>
+    <rect x="338" y="230" width="98" height="8" rx="4" fill="#BDB6A5"/>
+    <text x="510" y="240" font-size="11.5" font-weight="600" fill="#666">09:21</text>
+    <circle cx="570" cy="236" r="6" fill="#6CC28A"/>
+  </g>
+</svg>

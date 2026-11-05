@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Monuments data analytics: monument silhouette with charts</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8EBD3"/><stop offset="1" stop-color="#F3E3C4"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="135%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="url(#sky)"/>
+  <circle cx="150" cy="96" r="42" fill="#E9B65F" opacity="0.45"/>
+
+  <!-- monument silhouette -->
+  <g fill="#3A2E22">
+    <rect x="34" y="270" width="236" height="14"/>
+    <rect x="52" y="256" width="200" height="16"/>
+    <!-- minarets -->
+    <rect x="58" y="150" width="12" height="108"/><path d="M56 150 h16 l-3 -10 h-10 Z"/><path d="M58 140 q6 -16 12 0 Z"/>
+    <rect x="234" y="150" width="12" height="108"/><path d="M232 150 h16 l-3 -10 h-10 Z"/><path d="M234 140 q6 -16 12 0 Z"/>
+    <!-- main hall -->
+    <rect x="96" y="176" width="112" height="82"/>
+    <!-- dome -->
+    <path d="M110 178 C 104 140, 128 116, 152 104 C 176 116, 200 140, 194 178 Z"/>
+    <rect x="149.5" y="84" width="5" height="22"/>
+    <circle cx="152" cy="84" r="4"/>
+    <!-- small domes -->
+    <path d="M90 178 C 88 164, 96 156, 104 154 C 112 156, 120 164, 118 178 Z"/>
+    <path d="M186 178 C 184 164, 192 156, 200 154 C 208 156, 216 164, 214 178 Z"/>
+  </g>
+  <path d="M138 258 V 222 C 138 206, 166 206, 166 222 V 258 Z" fill="#F3E3C4" opacity="0.9"/>
+  <g fill="#F3E3C4" opacity="0.55">
+    <rect x="106" y="198" width="14" height="22" rx="7"/><rect x="184" y="198" width="14" height="22" rx="7"/>
+  </g>
+
+  <!-- dashboard card -->
+  <g filter="url(#sh)">
+    <rect x="300" y="36" width="306" height="248" rx="16" fill="#fff"/>
+  </g>
+  <text x="322" y="66" font-size="14" font-weight="800" fill="#1A1A1A">Visitors by Monument</text>
+  <rect x="322" y="76" width="96" height="6" rx="3" fill="#E7E1D3"/>
+
+  <!-- donut -->
+  <circle cx="556" cy="72" r="20" fill="none" stroke="#EEE7D7" stroke-width="9"/>
+  <circle cx="556" cy="72" r="20" fill="none" stroke="#C8A86A" stroke-width="9" stroke-dasharray="78 48" transform="rotate(-90 556 72)"/>
+  <circle cx="556" cy="72" r="20" fill="none" stroke="#3A2E22" stroke-width="9" stroke-dasharray="26 100" stroke-dashoffset="-78" transform="rotate(-90 556 72)"/>
+
+  <!-- grid -->
+  <g stroke="#F1ECE1">
+    <line x1="322" y1="130" x2="586" y2="130"/><line x1="322" y1="170" x2="586" y2="170"/>
+    <line x1="322" y1="210" x2="586" y2="210"/><line x1="322" y1="250" x2="586" y2="250"/>
+  </g>
+  <!-- bars -->
+  <g fill="#E9DDC3">
+    <rect x="334" y="178" width="30" height="72" rx="5"/>
+    <rect x="384" y="146" width="30" height="104" rx="5"/>
+    <rect x="434" y="196" width="30" height="54" rx="5"/>
+    <rect x="484" y="122" width="30" height="128" rx="5" fill="#C8A86A"/>
+    <rect x="534" y="164" width="30" height="86" rx="5"/>
+  </g>
+  <!-- trend line -->
+  <path d="M349 168 L 399 138 L 449 172 L 499 108 L 549 140" fill="none" stroke="#3A2E22" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <g fill="#fff" stroke="#3A2E22" stroke-width="2">
+    <circle cx="349" cy="168" r="4"/><circle cx="399" cy="138" r="4"/><circle cx="449" cy="172" r="4"/>
+    <circle cx="499" cy="108" r="5" fill="#C8A86A"/><circle cx="549" cy="140" r="4"/>
+  </g>
+  <g fill="#B6AC98">
+    <rect x="336" y="262" width="26" height="5" rx="2.5"/><rect x="386" y="262" width="26" height="5" rx="2.5"/>
+    <rect x="436" y="262" width="26" height="5" rx="2.5"/><rect x="486" y="262" width="26" height="5" rx="2.5"/>
+    <rect x="536" y="262" width="26" height="5" rx="2.5"/>
+  </g>
+</svg>
