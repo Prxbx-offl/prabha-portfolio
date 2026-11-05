@@ -30,8 +30,8 @@ My personal portfolio website, built with **Next.js 14** and **React 18**. It's 
 ### Installation
 
 ```bash
-git clone https://github.com/Prxbx-offl/portfolio.git
-cd portfolio
+git clone https://github.com/Prxbx-offl/prabha-portfolio.git
+cd prabha-portfolio
 npm install
 ```
 
